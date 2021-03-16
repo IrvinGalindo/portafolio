@@ -1,0 +1,28 @@
+.size-3 {
+    font-size: 3rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    width: 100%;
+    justify-items: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    }
+    .size-3 {
+      font-size: 1.5rem;
+    }
+  }
+  

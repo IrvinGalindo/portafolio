@@ -1,0 +1,65 @@
+.project {
+  position: relative;
+  background-color: rgba(102, 102, 102, 0.678);
+  padding: 1rem;
+  min-height: 30rem;
+  width: 100%;
+  border-radius: 15px;
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+.project:hover,
+.project:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+.project > img {
+  width: 100%;
+  max-height: 10rem;
+  object-fit: contain;
+}
+
+.project__info {
+  min-height: 12rem;
+  margin-bottom: 3rem;
+}
+
+.project__info > h2 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.project__info > p {
+  font-style: oblique;
+  line-height: 2rem;
+}
+
+.project__technologies {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project__technologies > img {
+  max-height: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .project > img {
+    max-height: 6rem;
+  }
+
+  .project__technologies > img {
+    max-height: 3rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./Constants/Colors.css";
+@import "./Constants/Shadows.css";
+@import "./Constants/Borders.css";
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.app__categories {
+  margin: 0 3rem;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+  border: solid var(--contrast-color) 5px;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-card);
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .app__categories {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
