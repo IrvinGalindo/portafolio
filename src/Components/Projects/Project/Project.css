@@ -51,10 +51,11 @@
   max-height: 4rem;
 }
 
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 768px) {
+  .project {
+    box-shadow: 0.05rem 0.05rem 0.8rem 0.05rem #c0baba;
+  }
+
   .project > img {
     max-height: 6rem;
   }
