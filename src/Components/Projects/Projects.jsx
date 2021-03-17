@@ -1,12 +1,14 @@
 import Project from "./Project/Project";
+import Section from "../Section/Section";
 
 import "./Projects.css";
+import { getWhatsAppLink } from "../../Constants/Links";
 
 import mexicoEnCasa from "../../assets/images/logos/mexicoencasa.svg";
 import encanchate from "../../assets/images/logos/encanchate.svg";
 import covidTracker from "../../assets/images/logos/covidtracker.png";
 import netflix from "../../assets/images/logos/netflix.png";
-import Section from "../Section/Section";
+import plus from "../../assets/images/page-icons/plus.svg";
 
 const Projects = () => {
   const projects = [
@@ -42,12 +44,20 @@ const Projects = () => {
       logo: netflix,
       technologies: ["react", "firebase"],
     },
+    {
+      url: getWhatsAppLink("Hi, Irvin. I am ready for creating cool stuff ;)"),
+      name: "Are you ready for creating cool stuff?",
+      description:
+        "Working together, we can transform your idea digitally, reducing times in daily processes and more clients can see your business. In no time, you will see the results of your investment.",
+      logo: plus,
+      technologies: ["react", "node", "firebase"],
+    },
   ];
 
   return (
     <Section
       title="Cool projects"
-      description="Those are the amazing projects that I have been evolved."
+      description="I had the opportunity to evolve in these amazing projects."
     >
       {projects.map((project) => (
         <Project key={project.name} project={project} />
