@@ -1,5 +1,7 @@
 import "./Banner.css";
 
+import downArrow from "../../assets/images/page-icons/arrow-down.svg";
+
 const Banner = () => {
   return (
     <div className="banner">
@@ -17,6 +19,7 @@ const Banner = () => {
           </p>
         </div>
       </div>
+      <img src={downArrow} alt="down-arrow" class="banner__scroll_arrow" />
     </div>
   );
 };
