@@ -1,7 +1,6 @@
 @import "./Constants/Colors.css";
 @import "./Constants/Shadows.css";
 @import "./Constants/Borders.css";
-@import "./Constants/Transforms.css";
 
 * {
   margin: 0px;
