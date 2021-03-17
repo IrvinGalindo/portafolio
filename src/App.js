@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="app">
       <Switch>
-        {/*Nav*/}
         <Route to="/">
           <Banner />
           <div className="app__categories">
@@ -19,8 +18,6 @@ function App() {
             <Projects />
           </div>
         </Route>
-        {/*My strongness*/}
-        {/*portafolio*/}
       </Switch>
       <Footer />
     </div>
