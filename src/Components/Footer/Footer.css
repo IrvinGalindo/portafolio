@@ -10,11 +10,19 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
 }
 
 .footer__media img {
-  height: 3rem;
+  height: 3.5rem;
   margin: 0 0.5rem;
   box-shadow: 1px 1px 1px 1px white;
   border-radius: 50%;
+}
+
+.footer__media img:active,
+.footer__media img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
